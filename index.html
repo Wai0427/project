@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Sean</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"/>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="home-section">
+        <div id="header">
+            <div class="container">
+                <nav class="header_nav">
+                    <img src="images/header_nav/logo_name.png" alt="logo" class="nav_logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div id="header-text">
+            <p>Software Engineer</p>
+            <p>Hi, I'm <span>Chen Weng Wai (Sean)</span> <br> from Selangor</p>
+        </div>
+    </div>
+    <!-- ---------about me---------- -->
+    <div id="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/personal/personal_img.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <p class="about-subtitle">About Me</p>
+                    <p class="about-text">
+                        I am a proactive and adaptable individual who made a successful <span class="emp-text">transition from the business industry to the IT field</span> in 2023. With a strong work ethic, excellent interpersonal skills, and a passion for continuous learning, I have been able to <span class="emp-text">self-study</span> and work on personal projects to sharpen my programming abilities. 
+                        <br><br>
+                        I have over 1 year and 6 months of experience in the IT industry as a Software Developer, mainly focusing on <span class="emp-text">PHP</span> and the <span class="emp-text">Laravel</span> framework. During this time, I have contributed to various web development projects, including developing and enhancing application layouts using <span class="emp-text">HTML, CSS, JavaScripts, Flutter</span> and others. My ability to quickly grasp new technologies has allowed me to work effectively in dynamic development environments. 
+                        <br> <br>
+                        Before entering the IT field, I worked for 2 years in the logistics industry, which helped me build a solid foundation in teamwork, communication, and problem-solving under pressure. This experience, combined with my technical skills, has made me a well-rounded professional capable of adapting to different roles and challenges.
+                    </p>
+                    <div class="tabs-title">
+                        <div class="tab-links active-link" onclick="openTab(event, 'skills')">Skills</div>
+                        <div class="tab-links" onclick="openTab(event, 'experiences')">Experiences</div>
+                        <div class="tab-links" onclick="openTab(event, 'education')">Education</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Frontend Skills</span><br>
+                                HTML5, CSS3, JavaScripts, Bootstraps/Tailwind CSS, Blade templating, jQuery, Livewire, Flutter
+                            </li>
+                            <li>
+                                <span>Backend Skills</span><br>
+                                PHP, Laravel, Eloquent ORM, Database Migrations & Seeders, Lumen, RESTful APIs
+                            </li>
+                            <li>
+                                <span>Tools & Techniques</span><br>
+                                VS Code, GIT & Github, Laravel Artisan CLI, MySQL, Sourcetree, XAMPP, virtualbox, CMS(Summernote, Wordpress), Icon library (Font Awesome)
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li>
+                                <span>2023 - 2025</span><br>
+                                Work as Software Engineer at Cipher Technology Sdn Bhd
+                            </li>
+                            <li>
+                                <span>2022 - 2023</span><br>
+                                Work as Senior Office, Logistics & Quality Department at Mr D.I.Y
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2019 - 2021</span><br>
+                                Bachelor in Logistics And Supply Chain Management at Tunku Abdul Rahman University of Management and Technology (TARUMT)
+                            </li>
+                            <li>
+                                <span>2017 -  2019</span><br>
+                                Diploma in Logistics And Supply Chain Management at Tunku Abdul Rahman University of Management and Technology (TARUMT)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------services---------- -->
+    <div id="services-section">
+        <div class="container">
+            <p class="section-title">My Services</p>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="services-subtitle">Web Development</p>
+                    <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="services-subtitle">Mobile Apps Development</p>
+                    <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    <p class="services-subtitle">Animation</p>
+                    <p class="services-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio---------- -->
+    <div id="portfolio-section">
+        <div class="container">
+            <p class="section-title">My Projects</p>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/projects/project1.png" alt="ecommerce">
+                    <div class="layer">
+                        <p class="layer-title">
+                            E-commerce Page
+                        </p>
+                        <a href="">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/projects/project2.png" alt="flutter">
+                    <div class="layer">
+                        <p class="layer-title">
+                            Flutter Apps
+                        </p>
+                        <a href="">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/projects/project3.png" alt="mini-project">
+                    <div class="layer">
+                        <p class="layer-title">
+                            Mini Projects
+                        </p>
+                        <a href="">
+                            <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ---------contact------- -->
+    <div id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <p class="contact-title">Contact Me</p>
+                    <p class="email-contact"> <i class="fa fa-envelope" aria-hidden="true"></i> chenwengwai27@gmail.com</p>
+                    <p class="phone-contact"> <i class="fa fa-phone-square" aria-hidden="true"></i> 016-2533691</p>
+                    <div class="social-icons">
+                        <a href="https://linkedin.com/in/weng-wai-chen-43b868235">
+                            <img class="linkedin-icon" src="images/linkedin-icon.png" alt="linkedin_icon">
+                        </a>
+                        <a href="https://github.com/Wai0427">
+                            <img class="github-icon" src="images/github-icon.png" alt="github_icon">
+                        </a>
+                    </div>
+                    <a href="images/my-resume.pdf" download class="btn download-btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button class="btn submit-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-footer">
+        <p>© 2025 Sean Chen's Profile</p>
+    </div>
+</body>
+</html>
