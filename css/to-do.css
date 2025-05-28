@@ -1,0 +1,124 @@
+
+body {
+    justify-self: center;
+}
+
+
+/*title*/
+.title-section {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-title {
+    font-size: 3rem;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.todo-img {
+    height: 3rem;
+}
+
+/*content*/
+.todo-content {
+    justify-self: center;
+    
+}
+
+.input-section {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.todo-input {
+    padding: 1rem;
+    width: 60vw;
+    margin-right: 1rem;
+    border-radius: 5rem;
+}
+
+.add-button {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: greenyellow;
+    border: none;
+    color: black;
+    font-weight: 700;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-container {
+    padding: 1rem;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+}
+
+.todo-subcontent {
+    padding: 2rem;
+    max-height: 55vh;
+    overflow-y: scroll;
+}
+/* WebKit scrollbar style (for Chrome, Edge, Safari) */
+.todo-subcontent::-webkit-scrollbar {
+    width: 6px; 
+}
+
+/*grey thum scrollbar*/
+.todo-subcontent::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 4px;
+}
+
+.todo-subcontent::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+.todo-back {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-color: rgba(127, 127, 243, 0.788);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+}
+
+.todo-back:hover {
+    background-color: black;
+    color: white;
+}
+
+.separate-line {
+    border-top: 1px solid black;
+    margin: 0.5rem 0;
+}
+
+.content-section {
+    gap: 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.todo-date {
+    margin-right: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}

@@ -1,0 +1,113 @@
+body {
+    font-size: 1.5rem;
+}
+
+.title-page {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Subscribes Button*/
+.yt-section {
+    padding: 0 0 1rem 0;
+    border-bottom: 0.2rem solid black;
+    
+}
+
+.yt-btn {
+    background-color: transparent;
+    border-radius: 10rem;
+    border: 0.1rem solid black ;
+    min-height: 5rem;
+    min-width: 15rem;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.yt-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/*games*/
+.rps-games {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.2rem solid black;
+}
+
+.rps-btn:hover {
+    color: red;
+}
+
+
+/*Total Cost Calculator*/
+.cost-calculator {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid black;
+}
+
+.cost-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userOrder {
+    width: 20rem;
+    font-size: 1.5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+
+.calc-btn {
+    height: 2.3rem;
+    border-radius: 0.5rem;
+    border: 0.15rem solid black;
+    font-size: 1.5rem;
+}
+
+.calc-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/*ToDo List*/
+.todo {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid black;
+}
+
+/*Profile Page*/
+.main-page button{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5rem;
+    background-color: rgba(127, 127, 243, 0.788);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+}
+
+.main-page button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/*drumkit section*/
+.drumkit-section {
+    padding-bottom: 2rem;
+    border-bottom: 0.2rem solid black;
+}
+
+/*ecommerce project */
+

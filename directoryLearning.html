@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learning</title>
+        <link rel="stylesheet" href="css/dir-learn.css">
+    </head>
+    <body>
+        <p class="title-page">Directory of Learning JavaScript</p>
+
+        <div class="yt-section">
+            <p>1. Youtube Subscribe Button</p>
+    
+            <button class="yt-btn" onclick="subscribeYT();">
+                Subscribe
+            </button>
+        </div>
+
+        <div class="rps-games">
+            <p class="rps-font">2. (GAMES) - Rock Paper Scissors</p>
+    
+            
+            <a class="rps-btn" href="project/rockPaperScissor.html">
+                Click Here
+            </a>
+
+        </div>
+
+        <div class="cost-calculator">
+            <p>3. ecommerce Shipping Calculator <br>
+                Orders under $40 = +$10 Shipping Fee<br>
+                Orders over $40 = Free Shipping Fee
+            </p>
+            
+            <div class="cost-row">
+                <input 
+                type="number" 
+                min="1" 
+                class="userOrder" 
+                oninput="this.value = this.value < 1 ? 1 : this.value" 
+                onkeydown="enterCalculation(event);" 
+                placeholder="Enter your cost here">
+
+                <button class="calc-btn" onclick="totalCostOfOrder();">
+                    Calculate
+                </button>
+            </div>
+            
+            <p class="totalCost"></p>
+        </div>
+
+        <div class="todo">
+            <p>To-do List</p>
+            <a href="./project/to-do-list.html">To-do List Page</a>
+            <br> <br>
+
+            <!-- testing -->
+            <!-- <p>To-do List (V2)</p>
+            <a href="todo2.html">To-do List page 2</a> -->
+        </div>
+
+        <div class="drumkit-section">
+            <p>Drumkit Project</p>
+            <a href="./project/drumkit.html">Drumkit Page</a>
+        </div>
+
+        <div class="ecommerce-project">
+            <p>Ecommerce project</p>
+
+            <a href="./project/ecommerce/ecommerce.html">Ecommerce Page</a>
+        </div>
+
+        <div class="main-page">
+            <a href="./main-page.html">
+                <button class="main-page">Profile Page</button>
+            </a> 
+        </div>
+
+        <script src="scripts/dir-learn.js"></script>
+    </body>
+</html>
