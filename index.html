@@ -6,7 +6,6 @@
     <title>Personal Portfolio Website - Sean</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous"/>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <div id="home-section">
@@ -14,12 +13,14 @@
             <div class="container">
                 <nav class="header_nav">
                     <img src="images/header_nav/logo_name.png" alt="logo" class="nav_logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>  
+                    <ul id="sidemenu">
+                        <li><a href="#home-section">Home</a></li>
+                        <li><a href="#about-section">About</a></li>
+                        <li><a href="#services-section">Services</a></li>
+                        <li><a href="#portfolio-section">Portfolio</a></li>
+                        <li><a href="#contact-section">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i> 
                     </ul>
                 </nav>
             </div>
@@ -194,5 +195,7 @@
     <div class="copyright-footer">
         <p>© 2025 Sean Chen's Profile</p>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
