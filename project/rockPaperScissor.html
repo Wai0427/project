@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Papper Scissor</title>
+    <link rel="stylesheet" href="../css/rps-game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- 
+        body's comment
+    -->
+    <div class="games-display">
+        <div class="rps-title">
+            <p>Rock Paper Scissor</p>
+        </div>
+
+        <div class="first_section">
+            <div class="computerMove">
+                <p>Computer Pick</p>
+                <button class="com-move"></button>
+            </div>
+            
+            <div class="score-screen"></div>
+        </div>
+
+        <div class="userMove">
+            <div class="key-direction">
+                <p>Press key: </p> 
+                <p>
+                    r = Rock<br>
+                    p = Paper<br>
+                    s = Scissor<br>
+                </p>
+            </div> 
+            <div class="user-section">
+                <p class="userPick">Player Pick</p>
+                <p class="after_pick"></p>
+
+            </div>
+            <div class="userChoice">  
+                <button class="js-rock-button";>
+                    <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+                </button>
+                <button class="js-paper-button";>
+                    <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+                </button>
+                <button class="js-scissor-button";>
+                    <i class="fa fa-hand-peace-o" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+        
+        
+        <div class="reset-section">
+            <button onclick="reset()" class="reset-btn">
+                Reset Score
+            </button>
+            <button onclick="autoPlay()" class="auto-btn">
+                Auto Play
+            </button>
+        </div>
+
+        
+    </div>
+
+    <a href="../directoryLearning.html">
+        <button class="rps-back">Back to Main</button>
+    </a> 
+    
+     
+    <script src="../scripts/rps.js"></script>
+
+    <script>
+        /*script comment*/
+    </script>
+</body>
+</html>

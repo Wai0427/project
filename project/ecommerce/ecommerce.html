@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-commerce Project</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS page -->
+    <link rel="stylesheet" href="../../css/ecom-style/shared/general.css">
+    <link rel="stylesheet" href="../../css/ecom-style/shared/ecommerce-header.css">
+    <link rel="stylesheet" href="../../css/ecom-style/pages/ecommerce.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="ecommerce-header">
+      <button class="main-page" onclick="window.location.href = '../../directoryLearning.html'">
+        <div>
+          Directory
+        </div>
+      </button>
+      <div class="ecommerce-header-left-section">
+        <a href="ecommerce.html" class="header-link">
+          <p class="ecommerce-logo1">
+            E-commerce
+          </p>
+          <p class="ecommerce-mobile-logo">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          </p>
+        </a>
+      </div>
+
+      <div class="ecommerce-header-middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="../../images/ecommerce/icons/search-icon.png">
+        </button>
+      </div>
+
+      <div class="ecommerce-header-right-section">
+        <a class="orders-link header-link" href="orders.html">
+          <span class="returns-text">Returns</span>
+          <span class="orders-text">& Orders</span>
+        </a>
+
+        <a class="cart-link header-link" href="checkout.html">
+          <img class="cart-icon" src="../../images/ecommerce/icons/cart-icon.png">
+          <div class="cart-quantity js-cart-quantity">0</div>
+          <div class="cart-text">Cart</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="products-grid js-products-grid">
+      </div>
+    </div>
+
+    <script type="module" src="../../scripts/ecom-script/ecommerce.js"></script>
+  </body>
+</html>
