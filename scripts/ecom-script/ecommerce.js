@@ -16,6 +16,18 @@ export function updateCartQuantity() {
 
 loadProducts(renderProductsGrid);
 
+const searchInput = document.getElementById('searchInput');
+
+searchInput.addEventListener('input', function () {
+  const filter = searchInput.value.toLowerCase();
+  const products = document.querySelectorAll('.product-name');
+
+  products.forEach(product => {
+    const text = product.textContent.toLowerCase();
+    product.style.display = text.includes(filter) ? 'block' : 'none';
+  });
+});
+
 function renderProductsGrid() {
   let productsHTML = '';
 
