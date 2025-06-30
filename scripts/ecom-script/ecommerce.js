@@ -20,11 +20,17 @@ const searchInput = document.getElementById('searchInput');
 
 searchInput.addEventListener('input', function () {
   const filter = searchInput.value.toLowerCase();
-  const products = document.querySelectorAll('.product-name');
+  const productNames = document.querySelectorAll('.product-name');
 
-  products.forEach(product => {
-    const text = product.textContent.toLowerCase();
-    product.style.display = text.includes(filter) ? 'block' : 'none';
+  productNames.forEach(productNameElement => {
+    const text = productNameElement.textContent.toLowerCase();
+    const productContainer = productNameElement.closest('.product-container');
+
+    if (text.includes(filter)) {
+      productContainer.style.display = 'block';
+    } else {
+      productContainer.style.display = 'none';
+    }
   });
 });
 
