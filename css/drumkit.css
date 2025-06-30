@@ -16,12 +16,12 @@ h1 {
 
 /* Drum Button Container */
 .set {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin: 5% auto;
-    max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 3 per row */
+  gap: 1rem;
+  justify-items: center;
+  margin: 5% auto;
+  max-width: 900px;
 }
 
 /* Drum Buttons */
@@ -33,8 +33,8 @@ h1 {
     color: #DA0463;
     text-shadow: 2px 0 #DBEDF3;
     border-radius: 15px;
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 18vh;
     background-color: white;
     background-size: cover;
     background-position: center;
@@ -90,10 +90,19 @@ footer {
 }
 
 /* Responsive Design */
+@media (max-width: 700px) {
+  .set {
+    grid-template-columns: repeat(3, 1fr); /* 4 per row on wider screens */
+  }
+  .set > :nth-child(7) {
+    grid-column: 2; /* Center column of 3-column grid */
+  }
+}
+
 @media (max-width: 600px) {
     .drum {
-        width: 80px;
-        height: 80px;
+        width: 100%;
+        height: 25vw;
         font-size: 2rem;
     }
 

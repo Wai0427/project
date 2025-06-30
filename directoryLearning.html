@@ -7,60 +7,63 @@
   <link rel="stylesheet" href="css/dir-learn.css" />
 </head>
 <body>
-  <p class="title-page">Directory of Learning JavaScript</p>
+  <p class="title-page">Directory</p>
 
-  <section class="yt-section">
-    <p>1. YouTube Subscribe Button</p>
-    <button class="yt-btn" onclick="subscribeYT();">
-      Subscribe
-    </button>
-  </section>
+  <div class="section-container">
+        <section class="yt-section">
+        <p>1. YouTube Subscribe Button</p>
+        <button class="yt-btn" onclick="subscribeYT();">
+        Subscribe
+        </button>
+    </section>
 
-  <section class="rps-games">
-    <p>2. (GAMES) - Rock Paper Scissors</p>
-    <a class="rps-btn" href="project/rockPaperScissor.html">
-      Click Here
-    </a>
-  </section>
+    <section class="cost-calculator">
+        <p>
+        2. E-commerce Shipping Calculator <br/>
+        Orders under $40 = +$10 Shipping Fee<br/>
+        Orders over $40 = Free Shipping Fee
+        </p>
 
-  <section class="cost-calculator">
-    <p>
-      3. E-commerce Shipping Calculator <br/>
-      Orders under $40 = +$10 Shipping Fee<br/>
-      Orders over $40 = Free Shipping Fee
-    </p>
+        <div class="cost-row">
+        <input 
+            type="number" 
+            min="1" 
+            class="userOrder" 
+            oninput="this.value = this.value < 1 ? 1 : this.value" 
+            onkeydown="enterCalculation(event);" 
+            placeholder="Enter your cost here"
+        />
+        <button class="calc-btn" onclick="totalCostOfOrder();">
+            Calculate
+        </button>
+        </div>
 
-    <div class="cost-row">
-      <input 
-        type="number" 
-        min="1" 
-        class="userOrder" 
-        oninput="this.value = this.value < 1 ? 1 : this.value" 
-        onkeydown="enterCalculation(event);" 
-        placeholder="Enter your cost here"
-      />
-      <button class="calc-btn" onclick="totalCostOfOrder();">
-        Calculate
-      </button>
-    </div>
+        <p class="totalCost"></p>
+    </section>
 
-    <p class="totalCost"></p>
-  </section>
+    <section class="rps-games">
+        <p>3. (GAMES) - Rock Paper Scissors</p>
+        <a class="rps-btn" href="project/rockPaperScissor.html">
+        RPS games
+        </a>
+    </section>
 
-  <section class="todo">
-    <p>4. To-do List</p>
-    <a href="./project/to-do-list.html">To-do List Page</a>
-  </section>
+    <section class="todo">
+        <p>4. To-do List</p>
+        <a class="rps-btn" href="./project/to-do-list.html">To-do List Page</a>
+    </section>
 
-  <section class="drumkit-section">
-    <p>5. Drumkit Project</p>
-    <a href="./project/drumkit.html">Drumkit Page</a>
-  </section>
+    <section class="drumkit-section">
+        <p>5. Drumkit Project</p>
+        <a class="rps-btn" href="./project/drumkit.html">Drumkit Page</a>
+    </section>
 
-  <section class="ecommerce-project">
-    <p>6. Ecommerce Project</p>
-    <a href="./project/ecommerce/ecommerce.html">Ecommerce Page</a>
-  </section>
+    <section class="ecommerce-project">
+        <p>6. Ecommerce Project</p>
+        <a class="rps-btn" href="./project/ecommerce/ecommerce.html">Ecommerce Page</a>
+    </section>
+  </div>
+  
 
   <div class="main-page">
     <a href="/">
