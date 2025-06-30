@@ -1,100 +1,109 @@
+/* General Styling */
 body {
     text-align: center;
     background-color: #283149;
-  }
-  
-  h1 {
-    font-size: 5rem;
-    color: #DBEDF3;
+    margin: 0;
+    padding: 0 1rem;
     font-family: "Arvo", cursive;
-    text-shadow: 3px 0 #DA0463;
-  
-  }
-  
-  footer {
+}
+
+h1 {
+    font-size: 4rem;
     color: #DBEDF3;
-    font-family: sans-serif;
-  }
-  
-  .w {
-    background-image: url("/images/drum-img/tom1.png");
-  }
-  
-  .a {
-    background-image: url("/images/drum-img/tom2.png");
-  }
-  
-  .s {
-    background-image: url("/images/drum-img/tom3.png");
-  }
-  
-  .d {
-    background-image: url("/images/drum-img/tom4.png");
-  }
-  
-  .j {
-    background-image: url("/images/drum-img/snare.png");
-  }
-  
-  .k {
-    background-image: url("/images/drum-img/crash.png");
-  }
-  
-  .l {
-    background-image: url("/images/drum-img/kick.png");
-  }
-  
-  .set {
-    margin: 10% auto;
-  }
-  
-  .game-over {
-    background-color: red;
-    opacity: 0.8;
-  }
-  
-  .pressed {
-    box-shadow: 0 3px 4px 0 #DBEDF3;
-    opacity: 0.5;
-  }
-  
-  .red {
-    color: red;
-  }
-  
-  .drum {
+    margin-top: 2rem;
+    text-shadow: 3px 0 #DA0463;
+}
+
+/* Drum Button Container */
+.set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 5% auto;
+    max-width: 900px;
+}
+
+/* Drum Buttons */
+.drum {
     outline: none;
-    border: 10px solid #404B69;
-    font-size: 5rem;
-    font-family: 'Arvo', cursive;
-    line-height: 2;
+    border: 8px solid #404B69;
+    font-size: 3rem;
     font-weight: 900;
     color: #DA0463;
-    text-shadow: 3px 0 #DBEDF3;
+    text-shadow: 2px 0 #DBEDF3;
     border-radius: 15px;
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    margin: 10px;
+    width: 120px;
+    height: 120px;
     background-color: white;
-  }
-  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
 
-  .drumkit-back {
-    position: absolute;
-    top: 2rem;
+.drum:active,
+.pressed {
+    box-shadow: 0 3px 5px rgba(255, 255, 255, 0.6);
+    opacity: 0.6;
+}
+
+/* Individual Button Backgrounds */
+.w { background-image: url("/images/drum-img/tom1.png"); }
+.a { background-image: url("/images/drum-img/tom2.png"); }
+.s { background-image: url("/images/drum-img/tom3.png"); }
+.d { background-image: url("/images/drum-img/tom4.png"); }
+.j { background-image: url("/images/drum-img/snare.png"); }
+.k { background-image: url("/images/drum-img/crash.png"); }
+.l { background-image: url("/images/drum-img/kick.png"); }
+
+/* Back Button */
+.drumkit-back {
+    position: fixed;
+    bottom: 2rem;
     right: 2rem;
-    width: 10rem;
-    height: 4rem;
+    padding: 1rem 2rem;
     border-radius: 5rem;
-    background-color: rgba(127, 127, 243, 0.788);
-    font-weight: 700;
+    background-color: rgba(127, 127, 243, 0.9);
+    font-weight: bold;
     font-size: 1rem;
     border: none;
-  }
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #fff;
+}
 
-  .drumkit:hover {
-      background-color: black;
-      color: white;
-  }
+.drumkit-back:hover {
+    background-color: #222;
+    color: white;
+}
+
+/* Footer */
+footer {
+    color: #DBEDF3;
+    font-size: 0.9rem;
+    margin: 2rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .drum {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .drumkit-back {
+        position: static;
+        margin: 2rem auto;
+        display: block;
+    }
+}

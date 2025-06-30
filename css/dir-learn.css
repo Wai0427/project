@@ -1,29 +1,45 @@
+/* Base Styles */
 body {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 .title-page {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-/*Subscribes Button*/
-.yt-section {
-    padding: 0 0 1rem 0;
-    border-bottom: 0.2rem solid black;
-    
+/* Section Styles */
+section {
+    margin-right: 2vw;
+    display: inline-grid;
+    width: 40%;
+    height: 20vh;
+    background: white;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05);
+    border-left: 0.5rem solid #333;
 }
 
+/* Youtube Subscribe Button */
 .yt-btn {
     background-color: transparent;
-    border-radius: 10rem;
-    border: 0.1rem solid black ;
-    min-height: 5rem;
-    min-width: 15rem;
-    padding: 1rem;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    border-radius: 5rem;
+    border: 0.1rem solid black;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .yt-btn:hover {
@@ -31,43 +47,49 @@ body {
     color: white;
 }
 
-/*games*/
-.rps-games {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
-    border-bottom: 0.2rem solid black;
+/* Rock Paper Scissors Button */
+.rps-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: black;
 }
 
 .rps-btn:hover {
     color: red;
+    background-color: #f0f0f0;
 }
 
-
-/*Total Cost Calculator*/
-.cost-calculator {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 0.2rem solid black;
-}
-
+/* Cost Calculator */
 .cost-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 .userOrder {
-    width: 20rem;
-    font-size: 1.5rem;
-    height: 2rem;
+    flex: 1;
+    min-width: 200px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #aaa;
     border-radius: 0.5rem;
 }
 
 .calc-btn {
-    height: 2.3rem;
-    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
     border: 0.15rem solid black;
-    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .calc-btn:hover {
@@ -75,26 +97,32 @@ body {
     color: white;
 }
 
-
-/*ToDo List*/
-.todo {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    border-bottom: 0.2rem solid black;
+/* To-Do List & Drumkit Links */
+a {
+    text-decoration: none;
+    color: #0055aa;
+    font-weight: bold;
 }
 
-/*Profile Page*/
-.main-page button{
-    position: absolute;
-    top: 2rem;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Button */
+.main-page {
+    position: fixed;
+    bottom: 2rem;
     right: 2rem;
-    width: 10rem;
-    height: 4rem;
+}
+
+.main-page button {
+    padding: 1rem 2rem;
     border-radius: 5rem;
-    background-color: rgba(127, 127, 243, 0.788);
+    background-color: rgba(127, 127, 243, 0.9);
     font-weight: 700;
     font-size: 1rem;
     border: none;
+    transition: all 0.3s ease;
 }
 
 .main-page button:hover {
@@ -103,11 +131,35 @@ body {
     border: 1px solid white;
 }
 
-/*drumkit section*/
-.drumkit-section {
-    padding-bottom: 2rem;
-    border-bottom: 0.2rem solid black;
+/* Responsive Design */
+@media (max-width: 975px) {
+    section {
+        width: 90%;
+    }
 }
 
-/*ecommerce project */
+@media (max-width: 768px) {
+    .cost-calculator {
+        height: auto;
+    }
 
+    .title-page {
+        font-size: 1.5rem;
+    }
+
+    .yt-btn, .calc-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .cost-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .main-page {
+        position: static;
+        text-align: center;
+        margin-top: 2rem;
+    }
+}
